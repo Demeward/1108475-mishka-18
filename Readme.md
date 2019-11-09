@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дэвид Слабковский](https://up.htmlacademy.ru/adaptive/18/user/1108475).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://up.htmlacademy.ru/adaptive/18/user/78239).
 
 ---
 
