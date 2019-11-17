@@ -1,0 +1,11 @@
+.page-main {
+  background-color: $main-color;
+}
+
+.page-main__container {
+  background-color: $background-color;
+
+  &--index {
+    background-color: #f9f9f9;
+  }
+}

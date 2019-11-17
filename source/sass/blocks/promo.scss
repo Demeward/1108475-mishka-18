@@ -1,0 +1,79 @@
+.promo {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 27px 30px 42px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-size: 340px, 6px;
+  background-position: 0  100%;
+}
+
+.promo__title {
+  position: relative;
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 48px;
+
+  &::after {
+    position: absolute;
+    content: "ТОВАР НЕДЕЛИ";
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+    color: $decorative-color1;
+    top: 35px;
+    left: 0;
+  }
+}
+
+.promo__desc {
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.promo__list {
+  line-height: 20px;
+  width: 260px;
+  margin-bottom: 39px;
+}
+
+.promo__term {
+  position: relative;
+  float: left;
+  display: inline;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 260px;
+    height: 1px;
+    background-color: #ececec;
+    bottom: -11px;
+  }
+}
+
+.promo__value {
+  margin-left: 98px;
+  margin-bottom: 20px;
+}
+
+.promo__price {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.promo__order {
+  width: 260px;
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 26px;
+}
