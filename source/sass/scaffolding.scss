@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: $mobile-width;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: $secondary-color;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: $secondary-color;
+  border: 2px solid $secondary-color;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $secondary-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

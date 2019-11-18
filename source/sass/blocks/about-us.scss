@@ -1,0 +1,85 @@
+.about-us {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 27px 30px 45px;
+}
+
+.about-us__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.about-us__features {
+  @include list-reset;
+  margin-top: 62px;
+}
+
+.about-us__feature {
+  position: relative;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  padding-top: 24px;
+  padding-bottom: 10px;
+  margin-top: 49px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--eco::before {
+    width: 32px;
+    height: 37px;
+    top: -30px;
+    left: 8px;
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--style::before {
+    width: 47px;
+    height: 28px;
+    top: -30px;
+    left: 0;
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--likes::before {
+    width: 34px;
+    height: 28px;
+    top: -25px;
+    left: 8px;
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--manually::before {
+    width: 35px;
+    height: 34px;
+    top: -27px;
+    left: 3.5px;
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--support::before {
+    width: 55px;
+    height: 23px;
+    top: -26px;
+    left: -5.5px;
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--packing::before {
+    width: 33px;
+    height: 32px;
+    top: -28px;
+    left: 3px;
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}
