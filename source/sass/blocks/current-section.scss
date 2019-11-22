@@ -11,3 +11,54 @@
   font-weight: 700;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .current-section {
+    position: relative;
+    width: $tablet-width;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 95px;
+    padding-bottom: 80px;
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 24px;
+      bottom: -12px;
+      left: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .current-section__title {
+    width: auto;
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .current-section {
+    padding-top: 93px;
+    padding-bottom: 100px;
+    width: $desktop-width;
+
+    &::after {
+      height: 34px;
+      bottom: -18px;
+      background-size: $desktop-width 40px;
+    }
+  }
+
+  .current-section__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

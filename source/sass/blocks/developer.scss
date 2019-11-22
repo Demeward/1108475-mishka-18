@@ -2,10 +2,12 @@
   display: flex;
   align-items: center;
   width: 182px;
+  height: 34px;
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
   color: #000000;
+  position: relative;
 
   &:active {
     opacity: 0.3;
@@ -13,6 +15,7 @@
 }
 
 .developer__logo {
-  margin-top: 6px;
-  margin-left: 29px;
+  position: absolute;
+  right: 0;
+  top: 2px;
 }
