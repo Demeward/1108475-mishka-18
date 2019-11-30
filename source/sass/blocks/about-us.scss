@@ -83,3 +83,70 @@
     background-image: url("../img/icon-feature-gift.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    width: $tablet-width;
+    padding-top: 49px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: -4px;
+  }
+
+  .about-us__features {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about-us__feature {
+    width: 334px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 28px;
+
+    &--style {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--manually {
+      order: 2;
+    }
+
+    &--support {
+      order: 4;
+    }
+
+    &--packing {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: $desktop-width;
+    padding-left: 225px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__feature {
+    margin-right: 16px;
+  }
+}
