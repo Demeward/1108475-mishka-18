@@ -13,10 +13,10 @@
 
 .page-footer__logo {
   display: none;
+  outline: none;
 }
 
 .page-footer__social {
-  // margin-left: 18px;
   padding-bottom: 11px;
 }
 
@@ -44,6 +44,28 @@
     height: 34px;
     margin-right: 77px;
     margin-bottom: 10px;
+
+    & svg {
+      fill: #231f20;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      fill: $decorative-color2;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
+
+    &--index:hover svg,
+    &--index:focus svg {
+      fill: #231f20;
+    }
+
+    &--index:active svg {
+      opacity: 1;
+    }
   }
 
   .page-footer__social {

@@ -1,0 +1,148 @@
+.modal-overlay {
+  display: none;
+  top: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 90;
+
+  &--show {
+    display: block;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: $mobile-width;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+  margin: 0 auto;
+  border: 1px solid #c7c7c7;
+  background-color: $main-color;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  z-index: 100;
+
+  &--show {
+    display: block;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.modal__form {
+  width: 260px;
+}
+
+.modal__set {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.modal__text {
+  text-align: center;
+}
+
+.modal__sizes {
+  @include list-reset;
+  width: 260px;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__item {
+  width: 82px;
+  min-height: 52px;
+}
+
+.modal__size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: inherit;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.modal__radio:checked + .modal__size {
+  border-color: $decorative-color1;
+}
+
+.modal__to-cart {
+  font-size: 17px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: $decorative-color1;
+  border: none;
+  margin-top: 31px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 260px;
+
+  &:hover,
+  &:focus {
+    background-color: $decorative-color2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    padding-top: 33px;
+    width: 566px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__form {
+    margin: 0 auto;
+    width: 350px;
+  }
+
+  .modal__text {
+    margin-top: 14px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .modal__sizes {
+    margin-top: 21px;
+    width: 350px;
+  }
+
+  .modal__item {
+    width: 112px;
+  }
+
+  .modal__to-cart {
+    width: 350px;
+  }
+}

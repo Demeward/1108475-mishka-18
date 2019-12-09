@@ -33,6 +33,7 @@
   position: relative;
   color: $secondary-color;
   padding-bottom: 5px;
+  outline: none;
 
   &::after {
     position: absolute;
@@ -44,7 +45,8 @@
     bottom: 0;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $decorative-color2;
   }
 

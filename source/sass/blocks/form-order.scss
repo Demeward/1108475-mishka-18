@@ -202,6 +202,7 @@
 
 .form-order__contacts-item {
   margin-bottom: 32px;
+  position: relative;
 }
 
 .form-order__name,
@@ -231,6 +232,28 @@
 
 .form-order__contact {
   margin-top: 8px;
+
+  &:hover + svg,
+  &:focus + svg {
+    opacity: 1;
+    fill: $decorative-color1;
+  }
+}
+
+.form-order__icon-phone {
+  position: absolute;
+  top: 34px;
+  right: 8px;
+  fill: #231f20;
+  opacity: 0.2;
+}
+
+.form-order__icon-mail {
+  position: absolute;
+  top: 34px;
+  right: 4px;
+  fill: #231f20;
+  opacity: 0.2;
 }
 
 .form-order__text {
@@ -406,10 +429,6 @@
     width: 501px;
     padding-top: 0;
     margin-bottom: 21px;
-
-    & .form-order__item {
-      // width: 501px;
-    }
   }
 
   .form-order__name {
@@ -433,6 +452,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    position: relative;
     width: 668px;
     margin-bottom: 13px;
   }
@@ -447,6 +467,16 @@
     &::placeholder {
       font-size: 19px;
     }
+  }
+
+  .form-order__icon-phone {
+    right: 26px;
+    top: 22px;
+  }
+
+  .form-order__icon-mail {
+    right: 22px;
+    top: 22px;
   }
 
   .form-order__message {
@@ -557,6 +587,14 @@
 
   .form-order__contact {
     width: 700px;
+  }
+
+  .form-order__icon-phone {
+    right: 7px;
+  }
+
+  .form-order__icon-mail {
+    right: 3px;
   }
 
   .form-order__message {
