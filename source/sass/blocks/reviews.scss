@@ -46,6 +46,16 @@
 .reviews__instagram {
   font-size: 17px;
   color: $secondary-color;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $decorative-color1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__switch {
@@ -53,7 +63,6 @@
   margin-top: 32px;
   border: 1px solid #ececec;
   box-sizing: border-box;
-  // width: 260px;
   display: flex;
 
   &::before {
@@ -188,6 +197,12 @@
     margin-top: 2px;
     font-size: 17px;
     align-self: flex-start;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .reviews {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 }
 
