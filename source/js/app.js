@@ -22,7 +22,7 @@ if (promoButton) {
 
 if (catalogButton) {
   for (var i = 0; i < catalogButton.length; i++) {
-    catalogButton[i].addEventListener('click', function(evt) {
+    catalogButton[i].addEventListener("click", function(evt) {
       evt.preventDefault();
       modal.classList.add('modal--show');
       overlay.classList.add('modal-overlay--show');
@@ -32,10 +32,9 @@ if (catalogButton) {
 
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
-    evt.preventDefault(); {
+    evt.preventDefault();
       modal.classList.remove("modal--show");
       overlay.classList.remove("modal-overlay--show");
-    }
   }
 });
 
